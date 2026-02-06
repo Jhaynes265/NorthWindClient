@@ -19,4 +19,15 @@ document.addEventListener("DOMContentLoaded", function() {
         elem.classList.add("animate__animated", "animate__bounceOutUp");
     }
   });
+
+  const classList = ["animate__bounce", "animate__flash", "animate__pulse", "animate__rubberBand", "animate__shakeX", "animate__shakeY", "animate__headShake", "animate__swing", "animate__tada", "animate__wobble", "animate__jello", "animate__heartBeat"];
+  const randomNumber = Math.floor(Math.random() * classList.length);
+  const AddClass = classList[randomNumber];
+  const h1 = document.getElementById("title");
+  h1.classList.add(AddClass);
+
+
+
+
+
 });
